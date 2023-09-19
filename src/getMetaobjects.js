@@ -41,7 +41,7 @@ const defs = response.body.data.metaobjects.edges.map(metaObj => {
         fields: [
             {
                 key: "color",
-                value: metaObj.node.color.value
+                value: metaObj.node.color.value || '#FFFFFF'
             },
             {
                 key: "label",

@@ -10,7 +10,7 @@
 		"fields": [
 			{
 				"key": "color",
-				"value": "#cf1818"
+				"value": "#FFFFFF"
 			},
 			{
 				"key": "label",
@@ -34,6 +34,25 @@
 			{
 				"key": "label",
 				"value": "Black"
+			}
+		]
+	},
+	{
+		"handle": "lime",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#84ef68"
+			},
+			{
+				"key": "label",
+				"value": "Lime"
 			}
 		]
 	}

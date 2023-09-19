@@ -13,41 +13,42 @@ const session = shopify.session.customAppSession(process.env.SHOP_NAME2);
 
 const client = new shopify.clients.Graphql({ session });
 
+const mutationString = `
+    mutation metaobjectCreate ($metaobject: MetaobjectCreateInput!) {
+        metaobjectCreate(metaobject: $metaobject) {
+            metaobject {
+                fields {
+                    key
+                    value
+                }
+            }
+            userErrors {
+                field
+                message
+            }
+        }
+    }
+`
+
 async function createMetaobject(obj) {
-    const mutationString = `
-        mutation metaobjectCreate ($metaobject: MetaobjectCreateInput!) {
-            metaobjectCreate(metaobject: $metaobject) {
-                metaobject {
-                    fields {
-                        key
-                        value
+    try {
+        const response = await client.query({
+            data: {
+                query: mutationString,
+                variables: {
+                    "metaobject": {
+                        "capabilities": obj.capabilities,
+                        "type": obj.type,
+                        "fields": obj.fields
                     }
                 }
-                userErrors {
-                    field
-                    message
-                }
             }
-        }
-    `
-
-    const response = await client.query({
-        data: {
-            query: mutationString,
-            variables: {
-                "metaobject": {
-                    "capabilities": obj.capabilities,
-                    "type": obj.type,
-                    "fields": obj.fields
-                }
-            }
-        }
-    });
-
-    console.log(response.body);
+        });
+    
+        console.log(response.body);
+    } catch(err) {
+        console.error(err);
+    }   
 }
 
 data.forEach(async node => await createMetaobject(node));
-
-
-
