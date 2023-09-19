@@ -1,0 +1,18 @@
+[
+	{
+		"handle": "red",
+		"type": "theme_color_swatches",
+		"fields": {
+			"color": "#cf1818",
+			"label": "Red"
+		}
+	},
+	{
+		"handle": "black",
+		"type": "theme_color_swatches",
+		"fields": {
+			"color": "#000000",
+			"label": "Black"
+		}
+	}
+]
