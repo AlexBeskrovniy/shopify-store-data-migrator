@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node src/getMetaobjects.js"
+    "get-meta": "node src/getMetaobjects.js",
+    "write-meta": "node src/writeMetaobjects.js"
   },
   "keywords": [],
   "author": "",

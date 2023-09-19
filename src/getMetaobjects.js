@@ -15,6 +15,11 @@ const queryString = `{
         node {
             handle
             type
+            capabilities {
+                publishable {
+                    status
+                }
+            }
             color: field(key: "color") { value }
             label: field(key: "label") { value }
             image: field(key: "image") { value }
@@ -32,10 +37,17 @@ const defs = response.body.data.metaobjects.edges.map(metaObj => {
     return {
         handle: metaObj.node.handle,
         type: metaObj.node.type,
-        fields: {
-            color: metaObj.node.color.value,
-            label: metaObj.node.label.value
-        }
+        capabilities: metaObj.node.capabilities,
+        fields: [
+            {
+                key: "color",
+                value: metaObj.node.color.value
+            },
+            {
+                key: "label",
+                value: metaObj.node.label.value
+            }
+        ]
     }
 });
 

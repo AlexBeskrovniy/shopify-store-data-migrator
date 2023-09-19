@@ -2,17 +2,39 @@
 	{
 		"handle": "red",
 		"type": "theme_color_swatches",
-		"fields": {
-			"color": "#cf1818",
-			"label": "Red"
-		}
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#cf1818"
+			},
+			{
+				"key": "label",
+				"value": "Red"
+			}
+		]
 	},
 	{
 		"handle": "black",
 		"type": "theme_color_swatches",
-		"fields": {
-			"color": "#000000",
-			"label": "Black"
-		}
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#000000"
+			},
+			{
+				"key": "label",
+				"value": "Black"
+			}
+		]
 	}
 ]
