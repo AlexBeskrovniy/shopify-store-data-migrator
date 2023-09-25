@@ -8,6 +8,6 @@ export const shopify = shopifyApi({
     isCustomStoreApp: true,
     isEmbeddedApp: false,
     adminApiAccessToken: process.env.ACCESS_TOKEN,
-    scopes: ['read_products', 'write_metaobjects', 'read_metaobjects'],
+    scopes: ['read_products', 'write_products', 'write_metaobjects', 'read_metaobjects'],
     hostName: process.env.SHOP_NAME
   });

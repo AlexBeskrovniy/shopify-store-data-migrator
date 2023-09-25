@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "get-meta": "node src/getMetaobjects.js",
-    "write-meta": "node src/writeMetaobjects.js"
+    "write-meta": "node src/writeMetaobjects.js",
+    "set-vendor-logo": "node src/addVendorLogo.js" 
   },
   "keywords": [],
   "author": "",

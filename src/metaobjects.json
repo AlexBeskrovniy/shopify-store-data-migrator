@@ -1,6 +1,842 @@
 [
 	{
+		"handle": "denim",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#6c85b1"
+			},
+			{
+				"key": "label",
+				"value": "Denim"
+			}
+		]
+	},
+	{
+		"handle": "graphite",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#6d707c"
+			},
+			{
+				"key": "label",
+				"value": "Graphite"
+			}
+		]
+	},
+	{
+		"handle": "powell-blue",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#0674e2"
+			},
+			{
+				"key": "label",
+				"value": "Blue"
+			}
+		]
+	},
+	{
+		"handle": "octane",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#ff6c5e"
+			},
+			{
+				"key": "label",
+				"value": "Octane"
+			}
+		]
+	},
+	{
+		"handle": "azul",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#71a5b9"
+			},
+			{
+				"key": "label",
+				"value": "Azul"
+			}
+		]
+	},
+	{
+		"handle": "aluminum",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#c7c8c7"
+			},
+			{
+				"key": "label",
+				"value": "Aluminum"
+			}
+		]
+	},
+	{
+		"handle": "aqua",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#6bb7b7"
+			},
+			{
+				"key": "label",
+				"value": "Aqua"
+			}
+		]
+	},
+	{
+		"handle": "rose",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#671b27"
+			},
+			{
+				"key": "label",
+				"value": "Rose"
+			}
+		]
+	},
+	{
+		"handle": "astral-blue",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#5a7da1"
+			},
+			{
+				"key": "label",
+				"value": "Astral Blue"
+			}
+		]
+	},
+	{
 		"handle": "red",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#ff0000"
+			},
+			{
+				"key": "label",
+				"value": "Red"
+			}
+		]
+	},
+	{
+		"handle": "bd-orange",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#e68043"
+			},
+			{
+				"key": "label",
+				"value": "Orange"
+			}
+		]
+	},
+	{
+		"handle": "rain",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#5c5c5c"
+			},
+			{
+				"key": "label",
+				"value": "Rain"
+			}
+		]
+	},
+	{
+		"handle": "slate",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#e0e4e5"
+			},
+			{
+				"key": "label",
+				"value": "Slate"
+			}
+		]
+	},
+	{
+		"handle": "kingfisher",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#59caed"
+			},
+			{
+				"key": "label",
+				"value": "Kingfisher"
+			}
+		]
+	},
+	{
+		"handle": "grass-green",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#3e592e"
+			},
+			{
+				"key": "label",
+				"value": "Grass Green"
+			}
+		]
+	},
+	{
+		"handle": "dark-berry",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#62263a"
+			},
+			{
+				"key": "label",
+				"value": "Dark Berry"
+			}
+		]
+	},
+	{
+		"handle": "fern-green",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#bcac22"
+			},
+			{
+				"key": "label",
+				"value": "Fern Green"
+			}
+		]
+	},
+	{
+		"handle": "process-blue",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#014985"
+			},
+			{
+				"key": "label",
+				"value": "Process Blue"
+			}
+		]
+	},
+	{
+		"handle": "coral",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#db6559"
+			},
+			{
+				"key": "label",
+				"value": " Coral"
+			}
+		]
+	},
+	{
+		"handle": "ash",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#a19f9f"
+			},
+			{
+				"key": "label",
+				"value": "Ash"
+			}
+		]
+	},
+	{
+		"handle": "dark-olive",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#705f31"
+			},
+			{
+				"key": "label",
+				"value": "Dark Olive"
+			}
+		]
+	},
+	{
+		"handle": "envy-green",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#b3cb5b"
+			},
+			{
+				"key": "label",
+				"value": " Envy Green"
+			}
+		]
+	},
+	{
+		"handle": "curry-pepper",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#d4980f"
+			},
+			{
+				"key": "label",
+				"value": "Curry-Pepper"
+			}
+		]
+	},
+	{
+		"handle": "aloe-dusk",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#587d63"
+			},
+			{
+				"key": "label",
+				"value": "Aloe-Dusk"
+			}
+		]
+	},
+	{
+		"handle": "kiwi-arctic",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#99cb3a"
+			},
+			{
+				"key": "label",
+				"value": "Kiwi-Arctic"
+			}
+		]
+	},
+	{
+		"handle": "magenta-hotpink",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#ac1a39"
+			},
+			{
+				"key": "label",
+				"value": "Magenta-Hotpink"
+			}
+		]
+	},
+	{
+		"handle": "midnight-coolblue",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#455c87"
+			},
+			{
+				"key": "label",
+				"value": "Midnight-Coolblue"
+			}
+		]
+	},
+	{
+		"handle": "seafoam",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#03595d"
+			},
+			{
+				"key": "label",
+				"value": "Seafoam"
+			}
+		]
+	},
+	{
+		"handle": "burgundy",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#86202c"
+			},
+			{
+				"key": "label",
+				"value": "Burgundy"
+			}
+		]
+	},
+	{
+		"handle": "deep-forest",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#373d32"
+			},
+			{
+				"key": "label",
+				"value": "Deep Forest"
+			}
+		]
+	},
+	{
+		"handle": "arctic-green",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#3e5a55"
+			},
+			{
+				"key": "label",
+				"value": "Arctic Green"
+			}
+		]
+	},
+	{
+		"handle": "frost-green",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#63857e"
+			},
+			{
+				"key": "label",
+				"value": "Frost Green"
+			}
+		]
+	},
+	{
+		"handle": "amber",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#7d4b1d"
+			},
+			{
+				"key": "label",
+				"value": "Amber"
+			}
+		]
+	},
+	{
+		"handle": "sand",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#d4c09e"
+			},
+			{
+				"key": "label",
+				"value": "Sand"
+			}
+		]
+	},
+	{
+		"handle": "brown",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#5b534d"
+			},
+			{
+				"key": "label",
+				"value": "Brown"
+			}
+		]
+	},
+	{
+		"handle": "brown-gold",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#ec7c2b"
+			},
+			{
+				"key": "label",
+				"value": "Brown Gold"
+			}
+		]
+	},
+	{
+		"handle": "grape",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#312d50"
+			},
+			{
+				"key": "label",
+				"value": "Grape"
+			}
+		]
+	},
+	{
+		"handle": "cosmo-pink",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#efcfe3"
+			},
+			{
+				"key": "label",
+				"value": "Cosmo Pink"
+			}
+		]
+	},
+	{
+		"handle": "pomegranate",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#b3a1b1"
+			},
+			{
+				"key": "label",
+				"value": "Pomegranate"
+			}
+		]
+	},
+	{
+		"handle": "abyss",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#0d465e"
+			},
+			{
+				"key": "label",
+				"value": "Abyss"
+			}
+		]
+	},
+	{
+		"handle": "dark-chilli",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#a14842"
+			},
+			{
+				"key": "label",
+				"value": "Dark chilli"
+			}
+		]
+	},
+	{
+		"handle": "mustard",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#ba9f4c"
+			},
+			{
+				"key": "label",
+				"value": "Mustard"
+			}
+		]
+	},
+	{
+		"handle": "dream-purple",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#4a3b6e"
+			},
+			{
+				"key": "label",
+				"value": "Dream purple"
+			}
+		]
+	},
+	{
+		"handle": "blueberry",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#1120c3"
+			},
+			{
+				"key": "label",
+				"value": "Blueberry"
+			}
+		]
+	},
+	{
+		"handle": "camo",
 		"type": "theme_color_swatches",
 		"capabilities": {
 			"publishable": {
@@ -14,26 +850,7 @@
 			},
 			{
 				"key": "label",
-				"value": "Red"
-			}
-		]
-	},
-	{
-		"handle": "black",
-		"type": "theme_color_swatches",
-		"capabilities": {
-			"publishable": {
-				"status": "ACTIVE"
-			}
-		},
-		"fields": [
-			{
-				"key": "color",
-				"value": "#000000"
-			},
-			{
-				"key": "label",
-				"value": "Black"
+				"value": "Camo"
 			}
 		]
 	},
@@ -48,11 +865,201 @@
 		"fields": [
 			{
 				"key": "color",
-				"value": "#84ef68"
+				"value": "#a5cb61"
 			},
 			{
 				"key": "label",
 				"value": "Lime"
+			}
+		]
+	},
+	{
+		"handle": "boulder-melon",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Boulder-Melon"
+			}
+		]
+	},
+	{
+		"handle": "fade-seaglass",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Fade-Seaglass"
+			}
+		]
+	},
+	{
+		"handle": "lagoon-charcoal",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Lagoon-Charcoal"
+			}
+		]
+	},
+	{
+		"handle": "mantra-gold",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Mantra-Gold"
+			}
+		]
+	},
+	{
+		"handle": "mountains-grey",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Mountains-Grey"
+			}
+		]
+	},
+	{
+		"handle": "retro-emerald",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Retro-Emerald"
+			}
+		]
+	},
+	{
+		"handle": "tie-dye-red",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Tie-Dye-Red"
+			}
+		]
+	},
+	{
+		"handle": "tropic-merlot",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Tropic-Merlot"
+			}
+		]
+	},
+	{
+		"handle": "tundra-navy",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Tundra-Navy"
+			}
+		]
+	},
+	{
+		"handle": "synthwave-sapphire",
+		"type": "theme_color_swatches",
+		"capabilities": {
+			"publishable": {
+				"status": "ACTIVE"
+			}
+		},
+		"fields": [
+			{
+				"key": "color",
+				"value": "#FFFFFF"
+			},
+			{
+				"key": "label",
+				"value": "Synthwave-Sapphire"
 			}
 		]
 	}
