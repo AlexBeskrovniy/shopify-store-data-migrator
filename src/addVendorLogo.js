@@ -1,11 +1,5 @@
 import 'dotenv/config';
-// import * as fs from 'fs';
-// import path from 'path';
-// import { fileURLToPath } from 'url';
 import { shopify } from "./index.js";
-
-// const session = shopify.session.customAppSession(process.env.SHOP_NAME);
-// const client = new shopify.clients.Graphql({ session });
 
 async function getMetaobjects(client) {
     const metaobjectsQueryString = `{
@@ -27,9 +21,9 @@ async function getMetaobjects(client) {
     return response.body.data.metaobjects.edges;
 }
 
-async function getProductsByVendor(client, vendor) {
+async function getAllProducts(client) {
     const productsQueryString = `query {
-        products(first: 100, query: "vendor:${vendor}") {
+        products(first: 250) {
             edges {
                 node {
                     id
@@ -39,16 +33,11 @@ async function getProductsByVendor(client, vendor) {
         }
     }`
 
-    const response = await client.query({
+    const products = await client.query({
         data: productsQueryString
     });
 
-    // response.body.data.products.edges.map(edge => {
-    //     console.log(edge.node)
-    // });
-    // console.log(response.body.data.products.edges);
-
-    return response.body.data.products.edges;
+    return products.body.data.products.edges;
 }
 
 async function updateProductMetafield(client, productId, metaobjectId) {
@@ -85,33 +74,42 @@ async function updateProductMetafield(client, productId, metaobjectId) {
     });
 
     console.log(data.body.data.productUpdate.userErrors);
-    console.log(data.body.data.productUpdate.product.metafields);
 }
 
 async function addVendorLogos() {
     const session = shopify.session.customAppSession(process.env.SHOP_NAME);
     const client = new shopify.clients.Graphql({ session });
-
+    
+    const products = await getAllProducts(client);
     const metaobjects = await getMetaobjects(client);
-    const metaobjectData = metaobjects.map(({ node }) => {
-        return {
-            metaobjectId: node.id,
-            metaobjectLabel: node.label.value
-        } 
-    });
+    
+    const metaobjectData = metaobjects.reduce((acc, { node }) => {
+        acc[node.label.value] = node.id;
+        return acc;
+    }, {});
+    // console.log(metaobjectData);
 
-    metaobjectData.map(async ({ metaobjectId, metaobjectLabel }) => {
-        const products = await getProductsByVendor(client, metaobjectLabel);
-        products.map(async ({ node }) => {
-            await updateProductMetafield(client, node.id, metaobjectId);
-        });
-    });
+    const productsWithVendors = products.reduce((acc, { node }) => {
+        if (metaobjectData[node.vendor]) {
+            acc[node.id] = metaobjectData[node.vendor];
+        };
+
+        return acc;
+    }, {});
+    // console.log(productsWithVendors);
+
+    const timeout = async (m) => {
+        return new Promise((res) => {
+            setTimeout(res, m*300)
+        })
+    }
+
+    products.map(async ({ node }, i) => {
+        if (productsWithVendors[node.id]) {
+            await timeout(i);
+            await updateProductMetafield(client, node.id, productsWithVendors[node.id])
+        }
+    })
 }
-
-// getProductsByVendor('Arzum');
-
-// updateProductMetafield('gid://shopify/Product/7823074689263', 'gid://shopify/Metaobject/11672125679');
-
-// getMetaobjects(client, metaobjectsQueryString);
 
 addVendorLogos();
