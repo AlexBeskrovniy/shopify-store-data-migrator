@@ -1,9 +1,11 @@
 import 'dotenv/config';
 import { shopify } from "./index.js";
 
+
+// Field "image" is an extra (need to rename by "logo" for multi-outdoor store)
 async function getMetaobjects(client) {
     const metaobjectsQueryString = `{
-        metaobjects (type: "vendor_logo", first: 100) {
+        metaobjects (type: "vendors", first: 100) {
           edges {
             node {
                 id
@@ -63,7 +65,7 @@ async function updateProductMetafield(client, productId, metaobjectId) {
                     "metafields": [
                         {
                             "namespace": "custom",
-                            "key": "product_vendor_logo",
+                            "key": "vendor_logo",
                             "type": "metaobject_reference",
                             "value": metaobjectId
                         }
