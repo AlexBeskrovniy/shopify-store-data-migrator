@@ -5,7 +5,7 @@ import { shopify } from "./index.js";
 // Field "image" is an extra (need to rename by "logo" for multi-outdoor store)
 async function getMetaobjects(client) {
     const metaobjectsQueryString = `{
-        metaobjects (type: "vendors", first: 100) {
+        metaobjects (type: "vendor_logo", first: 100) {
           edges {
             node {
                 id
