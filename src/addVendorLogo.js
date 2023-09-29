@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import { shopify } from "./index.js";
 
+import { timeout } from './helpers.js';
+
 
 // Field "image" is an extra (need to rename by "logo" for multi-outdoor store)
 async function getMetaobjects(client) {
@@ -10,7 +12,7 @@ async function getMetaobjects(client) {
             node {
                 id
                 label: field(key: "label") { value }
-                image: field(key: "image") { value }
+                logo: field(key: "logo") { value }
             }
           }
         }
@@ -99,12 +101,6 @@ async function addVendorLogos() {
         return acc;
     }, {});
     // console.log(productsWithVendors);
-
-    const timeout = async (m) => {
-        return new Promise((res) => {
-            setTimeout(res, m*300)
-        })
-    }
 
     products.map(async ({ node }, i) => {
         if (productsWithVendors[node.id]) {
